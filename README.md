@@ -1,4 +1,5 @@
 # Website Aplikasi Sistem Informasi Karyawan - Yii2 Platform (Test)
+### link record video : https://drive.google.com/file/d/1_QulCxKMJ20MXz7qUxS2mYYqlGViKITd/view?usp=sharing
 ### Basic Template Yii2
 import karyawan.sql, ubah nama db pada folder config/db.php
 ## login as admin
