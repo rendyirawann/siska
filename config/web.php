@@ -53,6 +53,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'mediafile/index' => 'media-file/index',
             ],
         ],
         

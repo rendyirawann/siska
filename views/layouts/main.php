@@ -44,7 +44,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             ['label' => 'Jabatan', 'url' => ['/jabatan/index'],'visible'=> Yii::$app->user->can('readJabatan')],
             ['label' => 'Gaji', 'url' => ['/gaji/index'],'visible'=> Yii::$app->user->can('readGaji')],
             ['label' => 'User', 'url' => ['/user/index'],'visible'=> Yii::$app->user->can('readUser')],
-            
+            ['label' => 'Dokumen', 'url' => ['/mediafile/index'],'visible'=> Yii::$app->user->can('readFiledoc')],
             // ['label' => 'About', 'url' => ['/site/about']],
             [
     'label' => 'Contact',
