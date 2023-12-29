@@ -1,6 +1,6 @@
-# ***important***
-***add features for upload and download file jpg and pdf***
-***only for admin***
+# ###***important***###
+***#add features for upload and download file jpg and pdf#***
+***#only for admin#***
 ![alt_text](https://github.com/rendyirawann/siska/blob/main/4.png?raw=true)
 # Website Aplikasi Sistem Informasi Karyawan - Yii2 Platform (Test)
 ### link record video : https://drive.google.com/file/d/1_QulCxKMJ20MXz7qUxS2mYYqlGViKITd/view?usp=sharing
