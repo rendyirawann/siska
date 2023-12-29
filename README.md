@@ -1,3 +1,17 @@
+# Website Aplikasi Sistem Informasi Karyawan - Yii2 Platform (Test)
+### link record video : https://drive.google.com/file/d/1_QulCxKMJ20MXz7qUxS2mYYqlGViKITd/view?usp=sharing
+### Basic Template Yii2
+import karyawan.sql, ubah nama db pada folder config/db.php
+## login as admin
+Username : admin
+Password : admin
+## login as user
+username : user
+password : user
+![alt_text](https://github.com/rendyirawann/siska/blob/main/Sistem-Informasi-Karyawan.png?raw=true)
+![alt_text](https://github.com/rendyirawann/siska/blob/main/Sistem-Informasi-Karyawan%20Admin.png?raw=true)
+![alt_text](https://github.com/rendyirawann/siska/blob/main/User.png?raw=true)
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
