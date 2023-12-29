@@ -9,7 +9,7 @@ Password : admin
 username : user
 password : user
 ![alt_text](https://github.com/rendyirawann/siska/blob/main/Sistem-Informasi-Karyawan.png?raw=true)
-![alt_text](https://github.com/rendyirawann/siska/blob/main/Sistem-Informasi-Karyawan%20Admin.png?raw=true)
+![alt_text](https://github.com/rendyirawann/siska/blob/main/Sistem-Informasi-Karyawan%20Admin1.png?raw=true)
 ![alt_text](https://github.com/rendyirawann/siska/blob/main/User.png?raw=true)
 
 <p align="center">
