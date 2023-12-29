@@ -32,7 +32,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'gaji',
-            'id_jabatan',
+            // 'id_jabatan',
+            [
+                'attribute'=>'id_jabatan',
+                'value'=>'jabatan.jabatan',
+            ],
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Gaji $model, $key, $index, $column) {

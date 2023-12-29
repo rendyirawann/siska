@@ -52,6 +52,16 @@ class Profile extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getUser()
+{
+    return $this->hasOne(User::className(), ['id' => 'id_user']);
+}
+
+public function getJabatan()
+{
+    return $this->hasOne(Jabatan::className(),['id' => 'id_jabatan']);
+}
+
     /**
      * Gets query for [[User]].
      *

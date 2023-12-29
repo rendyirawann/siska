@@ -44,4 +44,9 @@ class Gaji extends \yii\db\ActiveRecord
             'id_jabatan' => 'Id Jabatan',
         ];
     }
+
+    public function getJabatan()
+{
+    return $this->hasOne(Jabatan::className(), ['id' => 'id_jabatan']);
+}
 }

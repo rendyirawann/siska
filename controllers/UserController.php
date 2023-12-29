@@ -78,7 +78,7 @@ class UserController extends Controller
      */
     public function actionCreate()
     {
-        if (Yii::$app->user->can('createPost')) {
+        if (Yii::$app->user->can('createUser')) {
             // create post
         
 
