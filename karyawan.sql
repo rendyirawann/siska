@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 29, 2023 at 03:22 AM
+-- Generation Time: Jan 02, 2024 at 12:45 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -63,18 +63,22 @@ CREATE TABLE `auth_item` (
 
 INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`) VALUES
 ('admin', 1, NULL, NULL, NULL, 1703793171, 1703793171),
+('createFiledoc', 2, 'Tambah Filedoc', NULL, NULL, 1703884561, 1703884561),
 ('createGaji', 2, 'Buat Gaji', NULL, NULL, 1703814037, 1703814037),
 ('createJabatan', 2, 'Buat Jabatan', NULL, NULL, 1703794709, 1703794709),
 ('createProfile', 2, 'Buat Profil', NULL, NULL, 1703812050, 1703812050),
 ('createUser', 2, 'Buat User', NULL, NULL, 1703793171, 1703793171),
+('deleteFiledoc', 2, 'Hapus Filedoc', NULL, NULL, 1703884561, 1703884561),
 ('deleteGaji', 2, 'Hapus Gaji', NULL, NULL, 1703814037, 1703814037),
 ('deleteJabatan', 2, 'Hapus Jabatan', NULL, NULL, 1703794709, 1703794709),
 ('deleteProfile', 2, 'Hapus Profil', NULL, NULL, 1703812050, 1703812050),
 ('deleteUser', 2, 'Hapus User', NULL, NULL, 1703793171, 1703793171),
+('readFiledoc', 2, 'Lihat Filedoc', NULL, NULL, 1703884561, 1703884561),
 ('readGaji', 2, 'Lihat Gaji', NULL, NULL, 1703814037, 1703814037),
 ('readJabatan', 2, 'Lihat Jabatan', NULL, NULL, 1703794709, 1703794709),
 ('readProfile', 2, 'Lihat Profil', NULL, NULL, 1703812050, 1703812050),
 ('readUser', 2, 'Lihat User', NULL, NULL, 1703793171, 1703793171),
+('updateFiledoc', 2, 'Ubah Filedoc', NULL, NULL, 1703884561, 1703884561),
 ('updateGaji', 2, 'Ubah Gaji', NULL, NULL, 1703814037, 1703814037),
 ('updateJabatan', 2, 'Ubah Jabatan', NULL, NULL, 1703794709, 1703794709),
 ('updateProfile', 2, 'Ubah Profil', NULL, NULL, 1703812050, 1703812050),
@@ -97,18 +101,22 @@ CREATE TABLE `auth_item_child` (
 --
 
 INSERT INTO `auth_item_child` (`parent`, `child`) VALUES
+('admin', 'createFiledoc'),
 ('admin', 'createGaji'),
 ('admin', 'createJabatan'),
 ('admin', 'createProfile'),
 ('admin', 'createUser'),
+('admin', 'deleteFiledoc'),
 ('admin', 'deleteGaji'),
 ('admin', 'deleteJabatan'),
 ('admin', 'deleteProfile'),
 ('admin', 'deleteUser'),
+('admin', 'readFiledoc'),
 ('admin', 'readGaji'),
 ('admin', 'readJabatan'),
 ('admin', 'readProfile'),
 ('admin', 'readUser'),
+('admin', 'updateFiledoc'),
 ('admin', 'updateGaji'),
 ('admin', 'updateJabatan'),
 ('admin', 'updateProfile'),
@@ -173,6 +181,27 @@ INSERT INTO `jabatan` (`id`, `jabatan`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `media_file`
+--
+
+CREATE TABLE `media_file` (
+  `id` int(11) NOT NULL,
+  `namaDokumen` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `media_file`
+--
+
+INSERT INTO `media_file` (`id`, `namaDokumen`) VALUES
+(4, 'karyawanType-658f325c4b5247.34780674.jpg'),
+(5, 'karyawanType-658f2f45d6af83.64566083.jpg'),
+(6, 'karyawanType-658f2fa74ee687.32358682.pdf'),
+(7, 'karyawanType-658f3a233799e1.74057270.pdf');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migration`
 --
 
@@ -194,7 +223,8 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 ('m231228_193705_init_rbac', 1703793171),
 ('m231228_201048_init_rbac', 1703794709),
 ('m231229_005933_init_rbac', 1703812050),
-('m231229_013626_init_rbac', 1703814037);
+('m231229_013626_init_rbac', 1703814037),
+('m231229_210110_init_rbac', 1703884561);
 
 -- --------------------------------------------------------
 
@@ -286,6 +316,12 @@ ALTER TABLE `jabatan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `media_file`
+--
+ALTER TABLE `media_file`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migration`
 --
 ALTER TABLE `migration`
@@ -319,6 +355,12 @@ ALTER TABLE `gaji`
 --
 ALTER TABLE `jabatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `media_file`
+--
+ALTER TABLE `media_file`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `profile`
